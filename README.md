@@ -13,7 +13,7 @@
   <a href="https://zula-stdnt.github.io/kids-math-game/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Live_Demo-Play_Online-2ECC71?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
   </a>
-  <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Zula-stdnt/kids-math-game?tab=MIT-1-ov-file#readme">
     <img src="https://img.shields.io/badge/License-MIT-F1C40F?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License MIT" />
   </a>
 </p>
