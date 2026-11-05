@@ -8,19 +8,24 @@
   <strong>An interactive, child-friendly, mobile-first arithmetic learning web application built with modern modular JavaScript (ES6+).</strong>
 </p>
 
+<!-- Working Interactive Badges -->
 <p align="center">
-  🚀 <strong>Live Demo:</strong> <a href="https://zula-stdnt.github.io/kids-math-game/">https://zula-stdnt.github.io/kids-math-game/</a>
+  <a href="https://zula-stdnt.github.io/kids-math-game/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Live_Demo-Play_Online-2ECC71?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-F1C40F?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License MIT" />
+  </a>
 </p>
 
-<!-- Static Non-Interactive / Unclickable Badges -->
-<div align="center" style="pointer-events: none; user-select: none;">
-  <img src="https://img.shields.io/badge/JavaScript-ES6%2B_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" draggable="false" style="pointer-events: none; cursor: default;" />
-  <img src="https://img.shields.io/badge/HTML5-Semantic_Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" draggable="false" style="pointer-events: none; cursor: default;" />
-  <img src="https://img.shields.io/badge/CSS3-Mobile--First_Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" draggable="false" style="pointer-events: none; cursor: default;" />
-  <img src="https://img.shields.io/badge/Web_Audio_API-Sound_Synthesizer-9B59B6?style=for-the-badge" alt="Web Audio API" draggable="false" style="pointer-events: none; cursor: default;" />
-  <img src="https://img.shields.io/badge/Storage-LocalStorage_API-FF6B6B?style=for-the-badge" alt="LocalStorage" draggable="false" style="pointer-events: none; cursor: default;" />
-  <img src="https://img.shields.io/badge/Academic-ITE_387_Mini_Project-4ECDC4?style=for-the-badge" alt="ITE 387 Mini Project" draggable="false" style="pointer-events: none; cursor: default;" />
-  <img src="https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge" alt="License MIT" draggable="false" style="pointer-events: none; cursor: default;" />
+<!-- Static Non-Navigating Tech Badges (Bound to in-page anchor so they never open shields.io) -->
+<div align="center">
+  <a href="#-kids-math-game"><img src="https://img.shields.io/badge/JavaScript-ES6%2B_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" /></a>
+  <a href="#-kids-math-game"><img src="https://img.shields.io/badge/HTML5-Semantic_Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /></a>
+  <a href="#-kids-math-game"><img src="https://img.shields.io/badge/CSS3-Mobile--First_Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" /></a>
+  <a href="#-kids-math-game"><img src="https://img.shields.io/badge/Web_Audio_API-Sound_Synthesizer-9B59B6?style=for-the-badge" alt="Web Audio" /></a>
+  <a href="#-kids-math-game"><img src="https://img.shields.io/badge/Storage-LocalStorage_API-FF6B6B?style=for-the-badge" alt="LocalStorage" /></a>
+  <a href="#-kids-math-game"><img src="https://img.shields.io/badge/Academic-ITE_387_Mini_Project-4ECDC4?style=for-the-badge" alt="ITE 387" /></a>
 </div>
 
 </div>
@@ -39,6 +44,107 @@ You can play the live game online directly in your browser without any installat
 **Kids Math Game** is an educational web application developed as a coursework **Mini Project for ITE 387: Advanced Programming**. It is designed to assist elementary school students in practicing fundamental arithmetic skills through colorful, randomized quizzes, audio feedback, and high score tracking.
 
 The application adheres strictly to the academic standards of **ITE 387**, utilizing an **ECMAScript Module (ESM)** architecture, the 4-step abstracted DOM creation pattern, pure math generation functions, and functional array pipelines (`.map()`, `.filter()`, `.reduce()`, `.sort()`).
+
+---
+
+## 🖼️ User Interface & Gameplay Showcase
+
+Below is a visual walkthrough showcasing the responsive design across Desktop and Mobile viewports:
+
+### 1. Login & Explorer Welcome
+<table>
+  <tr>
+    <th width="65%">🖥️ Desktop View</th>
+    <th width="35%">📱 Mobile View</th>
+  </tr>
+  <tr>
+    <td><img src="desktop_webpage_screenshots/Screenshot%20(1339).png" alt="Desktop Login Screen" width="100%" /></td>
+    <td><img src="mobile_webpage_screenshots/IMG_1952.PNG" alt="Mobile Login Screen" width="100%" /></td>
+  </tr>
+</table>
+
+### 2. Mode Selection & Question Presets
+<table>
+  <tr>
+    <th width="65%">🖥️ Desktop View</th>
+    <th width="35%">📱 Mobile View</th>
+  </tr>
+  <tr>
+    <td><img src="desktop_webpage_screenshots/Screenshot%20(1340).png" alt="Desktop Mode Selection" width="100%" /></td>
+    <td><img src="mobile_webpage_screenshots/IMG_1953.PNG" alt="Mobile Mode Selection" width="100%" /></td>
+  </tr>
+</table>
+
+### 3. Active Gameplay & Child-Friendly Touch Numpad
+<table>
+  <tr>
+    <th width="65%">🖥️ Desktop View (Keyboard & Field)</th>
+    <th width="35%">📱 Mobile View (Touch Numpad)</th>
+  </tr>
+  <tr>
+    <td><img src="desktop_webpage_screenshots/Screenshot%20(1341).png" alt="Desktop Gameplay" width="100%" /></td>
+    <td><img src="mobile_webpage_screenshots/IMG_1954.PNG" alt="Mobile Gameplay with Numpad" width="100%" /></td>
+  </tr>
+</table>
+
+### 4. Real-Time Feedback & Visual Progress Bar
+<table>
+  <tr>
+    <th width="65%">🖥️ Desktop View</th>
+    <th width="35%">📱 Mobile View</th>
+  </tr>
+  <tr>
+    <td><img src="desktop_webpage_screenshots/Screenshot%20(1343).png" alt="Desktop Answer Feedback" width="100%" /></td>
+    <td><img src="mobile_webpage_screenshots/IMG_1955.PNG" alt="Mobile Answer Feedback" width="100%" /></td>
+  </tr>
+</table>
+
+### 5. Game Over & Reward Celebrations
+<table>
+  <tr>
+    <th width="65%">🖥️ Desktop View</th>
+    <th width="35%">📱 Mobile View</th>
+  </tr>
+  <tr>
+    <td><img src="desktop_webpage_screenshots/Screenshot%20(1344).png" alt="Desktop Game Over" width="100%" /></td>
+    <td><img src="mobile_webpage_screenshots/IMG_1958.PNG" alt="Mobile Game Over" width="100%" /></td>
+  </tr>
+</table>
+
+### 6. Hall of Fame (Desktop Table vs. Mobile Responsive Cards)
+<table>
+  <tr>
+    <th width="65%">🖥️ Desktop Table View</th>
+    <th width="35%">📱 Mobile Card View</th>
+  </tr>
+  <tr>
+    <td><img src="desktop_webpage_screenshots/Screenshot%20(1348).png" alt="Desktop Leaderboard Table" width="100%" /></td>
+    <td><img src="mobile_webpage_screenshots/IMG_1959.PNG" alt="Mobile Leaderboard Cards" width="100%" /></td>
+  </tr>
+</table>
+
+<details>
+  <summary><strong>📸 Click to View Additional Gameplay & Arithmetic Rounds</strong></summary>
+  <br/>
+  <table>
+    <tr>
+      <th width="50%">🖥️ Desktop Addition Problem</th>
+      <th width="50%">🖥️ Desktop Division Problem</th>
+    </tr>
+    <tr>
+      <td><img src="desktop_webpage_screenshots/Screenshot%20(1342).png" alt="Desktop Addition Problem" width="100%" /></td>
+      <td><img src="desktop_webpage_screenshots/Screenshot%20(1347).png" alt="Desktop Division Problem" width="100%" /></td>
+    </tr>
+    <tr>
+      <th>📱 Mobile Subtraction Problem</th>
+      <th>📱 Mobile Multiplication Problem</th>
+    </tr>
+    <tr>
+      <td><img src="mobile_webpage_screenshots/IMG_1956.PNG" alt="Mobile Subtraction Problem" width="100%" /></td>
+      <td><img src="mobile_webpage_screenshots/IMG_1957.PNG" alt="Mobile Multiplication Problem" width="100%" /></td>
+    </tr>
+  </table>
+</details>
 
 ---
 
@@ -93,6 +199,8 @@ kids-math-game/
 ├── README.md               # Repository documentation
 ├── LICENSE                 # MIT License file
 ├── .gitignore              # Repository git ignore rules
+├── desktop_webpage_screenshots/ # Desktop UI captures
+├── mobile_webpage_screenshots/  # Mobile UI captures
 ├── css/
 │   └── style.css           # Mobile-first stylesheet (variables, grid, animations)
 └── js/
