@@ -2,43 +2,56 @@
 
 # 🎮 Kids Math Game
 
+### 🎓 Mini Project for ITE 387: Advanced Programming
+
 <p align="center">
-  <strong>An interactive, child-friendly, mobile-first arithmetic learning web application built with modern modular JavaScript.</strong>
+  <strong>An interactive, child-friendly, mobile-first arithmetic learning web application built with modern modular JavaScript (ES6+).</strong>
 </p>
 
-<!-- Unclickable / Non-interactable Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-ES6%2B_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript ES6+ Modules" />
-  <img src="https://img.shields.io/badge/HTML5-Semantic_Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Semantic Markup" />
-  <img src="https://img.shields.io/badge/CSS3-Mobile--First_Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Mobile First" />
-  <img src="https://img.shields.io/badge/Web_Audio_API-Sound_Synthesizer-9B59B6?style=for-the-badge" alt="Web Audio API" />
-  <img src="https://img.shields.io/badge/Storage-LocalStorage_API-FF6B6B?style=for-the-badge" alt="LocalStorage" />
-  <img src="https://img.shields.io/badge/Architecture-ITE_387_Standard-4ECDC4?style=for-the-badge" alt="ITE 387 Architecture" />
-  <img src="https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge" alt="License MIT" />
+  🚀 <strong>Live Demo:</strong> <a href="https://zula-stdnt.github.io/kids-math-game/">https://zula-stdnt.github.io/kids-math-game/</a>
 </p>
+
+<!-- Static Non-Interactive / Unclickable Badges -->
+<div align="center" style="pointer-events: none; user-select: none;">
+  <img src="https://img.shields.io/badge/JavaScript-ES6%2B_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" draggable="false" style="pointer-events: none; cursor: default;" />
+  <img src="https://img.shields.io/badge/HTML5-Semantic_Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" draggable="false" style="pointer-events: none; cursor: default;" />
+  <img src="https://img.shields.io/badge/CSS3-Mobile--First_Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" draggable="false" style="pointer-events: none; cursor: default;" />
+  <img src="https://img.shields.io/badge/Web_Audio_API-Sound_Synthesizer-9B59B6?style=for-the-badge" alt="Web Audio API" draggable="false" style="pointer-events: none; cursor: default;" />
+  <img src="https://img.shields.io/badge/Storage-LocalStorage_API-FF6B6B?style=for-the-badge" alt="LocalStorage" draggable="false" style="pointer-events: none; cursor: default;" />
+  <img src="https://img.shields.io/badge/Academic-ITE_387_Mini_Project-4ECDC4?style=for-the-badge" alt="ITE 387 Mini Project" draggable="false" style="pointer-events: none; cursor: default;" />
+  <img src="https://img.shields.io/badge/License-MIT-2ECC71?style=for-the-badge" alt="License MIT" draggable="false" style="pointer-events: none; cursor: default;" />
+</div>
 
 </div>
 
 ---
 
+## 🌐 Live Web Game
+
+You can play the live game online directly in your browser without any installation:
+👉 **[https://zula-stdnt.github.io/kids-math-game/](https://zula-stdnt.github.io/kids-math-game/)**
+
+---
+
 ## 📖 Overview
 
-**Kids Math Game** is an engaging educational web application created to help young learners practice and master foundational arithmetic. Designed from the ground up with a bright, playful aesthetic, accessible touch controls, and immediate auditory/visual feedback, the game provides a supportive and rewarding learning environment for children on phones, tablets, and desktop computers.
+**Kids Math Game** is an educational web application developed as a coursework **Mini Project for ITE 387: Advanced Programming**. It is designed to assist elementary school students in practicing fundamental arithmetic skills through colorful, randomized quizzes, audio feedback, and high score tracking.
 
-This project was engineered following the **ITE 387: Advanced Programming** academic standards, deconstructing traditional single-file scripting into a clean, decoupled **ECMAScript Module (ESM)** architecture.
+The application adheres strictly to the academic standards of **ITE 387**, utilizing an **ECMAScript Module (ESM)** architecture, the 4-step abstracted DOM creation pattern, pure math generation functions, and functional array pipelines (`.map()`, `.filter()`, `.reduce()`, `.sort()`).
 
 ---
 
 ## ✨ Key Features
 
 ### 🎯 4 Core Arithmetic Modes
-* ➕ **Addition:** Generates clean single-to-double digit addition problems ($1\text{--}10$).
-* ➖ **Subtraction:** Algorithmically guarantees non-negative differences ($a \ge b$) so young kids never encounter confusing negative numbers.
-* ✖️ **Multiplication:** Reinforces times tables from $1\text{ to }10$.
+* ➕ **Addition:** Clean single-to-double digit addition problems ($1\text{--}10$).
+* ➖ **Subtraction:** Non-negative integer results guaranteed ($a \ge b$) so young learners never face confusing negative numbers.
+* ✖️ **Multiplication:** Age-appropriate multiplication tables from $1\text{ to }10$.
 * ➗ **Division:** Generates problem sets where $dividend = divisor \times quotient$, strictly guaranteeing whole-integer quotients without fractions or division-by-zero errors.
 
 ### 📱 Hybrid Touch Numpad & Keyboard Input
-* **Child-Friendly On-Screen Numpad:** Big, bouncy touch targets ($0\text{--}9$, $\text{⌫}$ Backspace, and $\text{✔}$ Submit) tailored for mobile and tablet touchscreens, keeping the problem clearly visible without relying on obstructive virtual keyboards.
+* **Child-Friendly On-Screen Numpad:** Big, bouncy touch buttons ($0\text{--}9$, $\text{⌫}$ Backspace, and $\text{✔}$ Submit) tailored for mobile and tablet touchscreens, preventing the on-screen mobile keyboard from covering the math problem.
 * **Physical Keyboard Support:** Full support for desktop keyboard typing and `Enter` key submission.
 
 ### 🔊 Zero-Dependency Web Audio Synth
@@ -47,21 +60,22 @@ This project was engineered following the **ITE 387: Advanced Programming** acad
 * Accessible top-bar **Mute Toggle** (`🔊 Sound On / 🔇 Muted`) with preference persistence.
 
 ### 🏆 Persistent Hall of Fame (Leaderboard)
-* High scores and percentages are saved in `localStorage`.
+* High scores and percentages are saved client-side in `localStorage`.
 * Ranks players by accuracy percentage, followed by total score.
 * **Dual-View Responsive Presentation:** Renders as a semantic table on desktop viewports and dynamically adapts into stacked touch cards on mobile screens to prevent horizontal overflow.
 
-### 📊 Visual Progress & Feedback
+### 📊 Visual Progress & Scale Stability
 * Animated progress bar tracking session progress in real time.
 * Defensive input validation preventing empty input submission or false zero evaluation.
 * Canvas-based particle confetti explosions for high scores and perfect rounds.
 * Dedicated Game Over flow with one-click **"Play Again"** and **"Back to Menu"** actions.
+* Full-height viewport-stable layout that remains centered and anchored at all browser zoom scales ($50\%\text{--}150\%$).
 
 ---
 
 ## 🏛️ Academic Architecture (ITE 387 Standards)
 
-The project adheres to modern software engineering patterns established in the course:
+The project adheres to modern software engineering patterns established in **ITE 387: Advanced Programming**:
 
 * **ECMAScript Modules (ESM):** Full modular separation with explicit imports and exports.
 * **Abstracted DOM Helper Pattern:** Custom `create()` utility following the 4-step DOM lifecycle (*Create → Configure → Listen → Append*).
@@ -77,6 +91,7 @@ The project adheres to modern software engineering patterns established in the c
 kids-math-game/
 ├── index.html              # Semantic HTML5 application entry point
 ├── README.md               # Repository documentation
+├── LICENSE                 # MIT License file
 ├── .gitignore              # Repository git ignore rules
 ├── css/
 │   └── style.css           # Mobile-first stylesheet (variables, grid, animations)
@@ -111,24 +126,13 @@ Because this project utilizes modern **ECMAScript Modules (`<script type="module
 
 ---
 
-## 🌐 Live Deployment (GitHub Pages)
+## 👨‍💻 Author & Coursework
 
-To publish this game live on the web:
-1. Go to your repository on GitHub: `https://github.com/Zula-stdnt/kids-math-game`
-2. Navigate to **Settings** → **Pages**.
-3. Under **Branch**, select `main` and root folder `/`, then click **Save**.
-4. In a few minutes, your game will be live at:
-   ```
-   https://zula-stdnt.github.io/kids-math-game/
-   ```
-
----
-
-## 👨‍💻 Author
-
-* **Zuriel Anthony Villaluna**
-* Email: [zuriel.villaluna@gmail.com](mailto:zuriel.villaluna@gmail.com)
-* GitHub: [@Zula-stdnt](https://github.com/Zula-stdnt)
+* **Course:** ITE 387: Advanced Programming (Mini Project)
+* **Author:** Zuriel Anthony Villaluna
+* **Email:** [zuriel.villaluna@gmail.com](mailto:zuriel.villaluna@gmail.com)
+* **GitHub:** [@Zula-stdnt](https://github.com/Zula-stdnt)
+* **Live Demo:** [https://zula-stdnt.github.io/kids-math-game/](https://zula-stdnt.github.io/kids-math-game/)
 
 ---
 
