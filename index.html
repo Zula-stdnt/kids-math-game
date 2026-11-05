@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="description" content="Kids Math Game - Interactive and colorful educational arithmetic quiz application">
+    <meta name="theme-color" content="#ffd93d">
+    <title>Kids Math Game 🎮</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Utility Bar (Sound Toggle & Player Info) -->
+    <aside class="top-bar" aria-label="Game controls">
+        <div id="user-pill" class="user-pill hidden" aria-live="polite"></div>
+        <button id="sound-toggle-btn" class="sound-btn" type="button" aria-label="Toggle sound">
+            🔊 Sound On
+        </button>
+    </aside>
+
+    <main>
+        <!-- 1. Login Screen -->
+        <section id="login-screen" class="screen" aria-labelledby="login-heading">
+            <header>
+                <h1 id="login-heading">🎮 Kids Math Game 🎮</h1>
+            </header>
+            <div class="card">
+                <h2>Welcome, Explorer! 👋</h2>
+                <div id="welcome-message" class="welcome-text"></div>
+                <div class="input-group">
+                    <label for="username-input">Enter Your Name:</label>
+                    <input 
+                        type="text" 
+                        id="username-input" 
+                        placeholder="Your name here" 
+                        maxlength="20"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+                <div id="login-validation" class="validation-message" role="alert"></div>
+                <button id="login-btn" class="btn btn-primary" type="button">Start Adventure 🚀</button>
+            </div>
+        </section>
+
+        <!-- 2. Mode Selection Screen -->
+        <section id="mode-screen" class="screen hidden" aria-labelledby="mode-welcome">
+            <header>
+                <h1>🎮 Kids Math Game 🎮</h1>
+            </header>
+            <div class="card">
+                <h2 id="mode-welcome">Welcome, <span class="username-display"></span>!</h2>
+                
+                <div class="section-group">
+                    <h3>Choose Your Math Mode:</h3>
+                    <div class="mode-buttons" role="group" aria-label="Math modes">
+                        <button class="btn btn-mode btn-add" data-mode="add" type="button">➕ Addition</button>
+                        <button class="btn btn-mode btn-sub" data-mode="sub" type="button">➖ Subtraction</button>
+                        <button class="btn btn-mode btn-mul" data-mode="mul" type="button">✖️ Multiplication</button>
+                        <button class="btn btn-mode btn-div" data-mode="div" type="button">➗ Division</button>
+                    </div>
+                </div>
+
+                <div class="section-group">
+                    <h3>How Many Questions?</h3>
+                    <div class="question-buttons" role="group" aria-label="Question counts">
+                        <button class="btn btn-questions" data-questions="5" type="button">5 Questions</button>
+                        <button class="btn btn-questions selected" data-questions="10" type="button">10 Questions</button>
+                        <button class="btn btn-questions" data-questions="15" type="button">15 Questions</button>
+                    </div>
+                </div>
+
+                <div id="mode-validation" class="validation-message" role="alert"></div>
+                
+                <div class="action-buttons">
+                    <button id="start-game-btn" class="btn btn-primary" type="button">Start Game 🎯</button>
+                    <button id="view-leaderboard-btn" class="btn btn-secondary" type="button">🏆 Leaderboard</button>
+                    <button id="logout-btn" class="btn btn-secondary" type="button">Logout</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Game Screen -->
+        <section id="game-screen" class="screen hidden" aria-labelledby="game-heading">
+            <header>
+                <h1 id="game-heading">🎮 Kids Math Game 🎮</h1>
+            </header>
+            <div class="card">
+                <!-- Visual Quiz Progress Bar -->
+                <div class="progress-container" aria-hidden="true">
+                    <div id="game-progress-bar" class="progress-bar"></div>
+                </div>
+
+                <!-- Active Gameplay View -->
+                <div id="game-active-area">
+                    <div class="game-header">
+                        <div id="question-counter" class="counter">Question 1 of 10</div>
+                        <div id="current-score" class="score">Score: 0</div>
+                    </div>
+
+                    <div id="problem-text" class="problem" aria-live="assertive">Loading...</div>
+
+                    <div class="answer-section">
+                        <label for="answer-input" class="sr-only" style="display:none;">Your Answer</label>
+                        <input 
+                            type="number" 
+                            id="answer-input" 
+                            placeholder="?" 
+                            autocomplete="off" 
+                            inputmode="numeric" 
+                            pattern="[0-9]*"
+                        >
+                        <button id="submit-answer-btn" class="btn btn-primary" type="button">Submit ✔</button>
+                    </div>
+
+                    <!-- Child-Friendly Touch Numpad for Mobile / Tablet -->
+                    <div id="touch-numpad" class="numpad"></div>
+
+                    <div id="feedback-text" class="feedback" aria-live="polite"></div>
+
+                    <div class="action-buttons">
+                        <button id="quit-game-btn" class="btn btn-secondary" type="button">Quit to Menu</button>
+                    </div>
+                </div>
+
+                <!-- Dedicated Game Over View (Fixes Restart & Visibility Glitches) -->
+                <div id="game-over-area" class="game-over-panel hidden">
+                    <div class="game-over-icon">🏆</div>
+                    <h2>Game Finished!</h2>
+                    <div id="game-over-score" class="game-over-score">0 / 10</div>
+                    <p id="game-over-message" class="game-over-message">Great job!</p>
+                    
+                    <div class="action-buttons">
+                        <button id="play-again-btn" class="btn btn-primary" type="button">Play Again 🔁</button>
+                        <button id="game-over-menu-btn" class="btn btn-secondary" type="button">Choose Mode 📋</button>
+                        <button id="game-over-leaderboard-btn" class="btn btn-secondary" type="button">View Ranks 🏆</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Leaderboard Screen -->
+        <section id="leaderboard-screen" class="screen hidden" aria-labelledby="leaderboard-heading">
+            <header>
+                <h1 id="leaderboard-heading">🎮 Kids Math Game 🎮</h1>
+            </header>
+            <div class="card">
+                <h2>🏆 Hall of Fame 🏆</h2>
+                
+                <div class="leaderboard-container">
+                    <!-- Desktop Table Wrapper -->
+                    <div class="table-wrapper">
+                        <table id="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Best Score</th>
+                                    <th>Mode</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-list"></tbody>
+                        </table>
+                    </div>
+
+                    <!-- Mobile Responsive Cards Container -->
+                    <div id="leaderboard-cards" class="leaderboard-cards"></div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="back-to-menu-btn" class="btn btn-primary" type="button">Back to Menu 🏠</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for kids learning math | ITE 387 Advanced Programming</p>
+    </footer>
+
+    <!-- ITE 387 Academic Standard: ES6 Module Entry -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
